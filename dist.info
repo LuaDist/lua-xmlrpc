@@ -1,0 +1,46 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Roberto Ierusalimschy, André Carregal, Tomás Guisasola, Tim Niemueller"
+depends = {
+[[lua ~> 5.1]],
+[[luaexpat >= 1.1]],
+[[luasocket >= 2.0.2]],
+}
+
+desc = "LuaXMLRPC is a library of functions to deal with XML-RPC."
+version = "1.2.1"
+maintainer = "Peter Kapec"
+files = {
+Runtime = {
+[[lib/lua/xmlrpc/http.lua]],
+[[lib/lua/xmlrpc/init.lua]],
+[[lib/lua/xmlrpc/server.lua]],
+}
+,
+Test = {
+[[share/lua-xmlrpc/test//httptest.lua]],
+[[share/lua-xmlrpc/test//apitest.lua]],
+}
+,
+Example = {
+[[share/lua-xmlrpc/example//server_xavante.lua]],
+[[share/lua-xmlrpc/example//client.lua]],
+}
+,
+Data = {
+[[share/lua-xmlrpc/README]],
+}
+,
+Documentation = {
+[[share/lua-xmlrpc/doc//examples.html]],
+[[share/lua-xmlrpc/doc//luaxmlrpc.png]],
+[[share/lua-xmlrpc/doc//license.html]],
+[[share/lua-xmlrpc/doc//manual.html]],
+[[share/lua-xmlrpc/doc//index.html]],
+}
+,
+}
+
+license = "Kepler"
+name = "lua-xmlrpc"
+url = "http://www.keplerproject.org/luaxmlrpc/"
